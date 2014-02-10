@@ -1,0 +1,20 @@
+@import 'variables';
+
+.mixin-radius(@radius) {
+    -webkit-border-radius: @radius;
+    -moz-border-radius: @radius;
+    border-radius: @radius;
+}
+
+div {
+    width: @width;
+    height: @width/2;
+    background: lighten(@mycolor, 30%);
+    padding: 0 10px;
+    margin: auto;
+    .mixin-radius(5px);
+}
+
+h1 {
+    font-size: @baseSize*3;
+}
